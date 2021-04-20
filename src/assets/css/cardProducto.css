@@ -1,0 +1,20 @@
+div.card {
+    max-width: 540px;
+    border: none !important;
+}
+
+div.card .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card div.wrap  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wrap > p {
+    margin: unset;
+}

@@ -1,0 +1,15 @@
+div.col-lg-8 > img {
+    display: block;
+    width: 40%;
+    margin: auto 30%;
+}
+
+div.col-lg-4  div.wrap  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wrap > p {
+    margin: unset;
+}
