@@ -1,12 +1,17 @@
 div.card {
     max-width: 540px;
-    border: none !important;
 }
 
 div.card .col-md-4 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card img#img-product{
+    width: 90%;
+    height: 90%;
+    margin: auto;
 }
 
 div.card div.wrap  {

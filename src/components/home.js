@@ -1,14 +1,25 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
+
+import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
 
 import Navigation from "./navigation";
 import CardProducto from "./cardProducto";
 import Ubicacion from "./ubicacion";
 
-import { instrumentos } from "../assets/json/instrumentos.json";
-import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
-
 
 export default function Home(props) {
+    const [instrumentos, setInstrumentos] = useState([]);
+
+    let getAllInst = () => {
+        fetch('http://localhost:8080/api/v1/crud/instrumento/')
+            .then(response => response.json())
+            .then(data => setInstrumentos(data))
+            .catch(e => console.error(e));
+    };
+    
+    useEffect(() => {
+        getAllInst();
+    }, []);
 
     return (
         <Fragment>

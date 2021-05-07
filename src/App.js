@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import  Home  from "./components/home";
 import  Detalle  from "./components/detalle";
+import Abm from './components/abm';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Route exact path='/' component={Home}></Route>
       <Route path='/home' component={Home}></Route>
       <Route  path='/producto/:id' component={Detalle}></Route>
+      <Route  path='/abm' component={Abm}></Route>
     </Switch>
   );
 }
